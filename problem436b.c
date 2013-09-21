@@ -16,7 +16,7 @@ inline double random_double () {
   return ( (double) rand () / (double) RAND_MAX );
 }
 
-inline long double probabilityWinsPlayerTwo (long number_simulations) {
+inline long double probability_player_two_wins (long number_simulations) {
   double S = 0.0;
   double player_one_random = 0.0;
   double player_two_random = 0.0;
@@ -44,5 +44,5 @@ inline long double probabilityWinsPlayerTwo (long number_simulations) {
 int main () {
   const long NUMBER_REQUIRED = 10000000000000;
   srand (time(NULL));
-  printf ("%.15Lf\n", probabilityWinsPlayerTwo (NUMBER_REQUIRED));
+  printf ("%.15Lf\n", probability_player_two_wins (NUMBER_REQUIRED));
 }
