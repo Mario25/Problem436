@@ -1,2 +1,2 @@
 all:
-	gcc -O3 problem436 problem436b.c 
+	gcc -std=c99 problem436b.c -O3 -o problem436  
