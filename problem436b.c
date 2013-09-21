@@ -4,11 +4,11 @@
 
 typedef char bool;
 
-inline bool sOverOne (double s) {
+inline bool s_over_one (double s) {
   return (s > 1.0);
 }
 
-inline bool sOverTwo (double s) {
+inline bool s_over_two (double s) {
   return (s > 2.0);
 }
 
@@ -25,12 +25,12 @@ inline long double probabilityWinsPlayerTwo (long number_simulations) {
   long player_two_score = 0;
 
   while (iterations < number_simulations) {
-    while (!sOverOne (S)) {
+    while (!s_over_one (S)) {
       player_one_random = random_double ();
       S += player_one_random;
     }
 
-    while (!sOverTwo(S)) {
+    while (!s_over_two(S)) {
       player_two_random = random_double ();
       S += player_two_random;
     }
